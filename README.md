@@ -1,3 +1,8 @@
+# ppbrown note:
+
+This branch exists as a quick savepoint of my fork when it was named "diffusers-sdxlone".
+I havent examined whats in it compared to original.
+
 <!---
 Copyright 2022 - The HuggingFace Team. All rights reserved.
 
