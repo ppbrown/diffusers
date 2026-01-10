@@ -831,7 +831,7 @@ def convert_ldm_clip_checkpoint(checkpoint, local_files_only=False, text_encoder
         # a different key name, but I dont know them right now
         for maxkeyname in ["text_model.embeddings.position_embedding.weight"]:
             if maxkeyname in text_model_dict:
-                maxkey = text_model_dict[maxkeyname]
+                maxkey = int(text_model_dict[maxkeyname].shape[0])
 
         if config.max_position_embeddings != maxkey:
             # print("DEBUG: changing max_position_embeddings to", maxkey)
