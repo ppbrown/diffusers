@@ -176,6 +176,7 @@ if __name__ == "__main__":
         controlnet=args.controlnet,
         vae_path=args.vae_path,
         pipeline_class=pipeline_class,
+        load_safety_checker=False,  # because loading this blows up now
     )
 
     if args.half:
